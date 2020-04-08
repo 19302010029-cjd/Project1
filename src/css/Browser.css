@@ -1,0 +1,349 @@
+p{
+    line-height: 20px;
+}
+li a, .dropbtn
+{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+li a:hover, .dropdown:hover, .dropbtn
+{
+    background-color:#111;
+}
+.dropdown
+{
+    display:inline-block;
+    float: right;
+}
+.dropdown-content
+{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.dropdown-content a
+{
+    color:black;
+    padding:10px 10px;
+    text-decoration:none;
+    display:block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a#Browse{
+    background-color: #333;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-bottom-color: #333;
+}
+li a:hover {
+    background-color: #333;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-bottom-color: #333;
+}
+footer{
+    clear: both;
+    margin-left: 25px;
+    margin-top: 20px;
+    position: static;
+    bottom: 0;
+}
+footer small{
+    font-size: 15px;
+}
+div#part1{
+    float: left;
+}
+div#part2{
+    margin-left: 20px;
+    float: left;
+}
+div.titlebox{
+    margin-top: 25px;
+    margin-left: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    width: 300px;
+    height: 40px;
+    background-color: lightgray;
+}
+div.titlebox1{
+    margin-top: 25px;
+    margin-left: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 2px;
+    width: 1000px;
+    height: 40px;
+    background-color: lightgray;
+}
+p.title{
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+input#input {
+    margin-left: 30px;
+    border:solid lightgray;
+    height: 40px;
+    width: 260px;
+    margin-top: 0;
+    border-bottom-left-radius:10px;
+}
+input#submit{
+    position: absolute;
+    left: 289px;
+    border-bottom-right-radius:10px ;
+    border:solid lightgray;
+}
+div.wordbox1{
+    border-color: lightgray;
+    border-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+}
+div.wordbox2{
+    border-color: lightgray;
+    border-style: solid;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+    border-bottom-right-radius:10px ;
+    border-bottom-left-radius:10px;
+}
+p.word{
+    margin-left: 25px;
+    margin-top: 10px;
+    color: deepskyblue;
+}
+div#choosebox{
+    border-color: lightgray;
+    border-style: solid;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    width: 1000px;
+    height: 80px;
+    margin-left: 30px;
+}
+div.choose{
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+}
+select.select{
+    height: 30px;
+    width: 200px;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+input#filter{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    border-color: limegreen;
+    background-color: limegreen;
+    color: white;
+    font-weight: bold;
+}
+div#picturebox{
+    border-color: lightgray;
+    border-style: solid;
+    width: 1000px;
+    height: 850px;
+    margin-left: 30px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+img.picture{
+    margin-top: 15px;
+    margin-left: 50px;
+    width:180px;
+    height: 180px;
+}
+div#page{
+    text-align: center;
+}
+p#num{
+    margin-top: 25px;
+    color: deepskyblue;
+    font-size: 15px;
+}
+p.word:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 800px) {  /*响应式布局，当屏幕小于800px时变为竖向排列*/
+    div#part2{
+        float: left;
+    }
+    div.titlebox{
+        margin-top: 25px;
+        margin-left: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 2px;
+        width: 400px;
+        height: 40px;
+        background-color: lightgray;
+    }
+    div.titlebox1{
+        margin-top: 25px;
+        margin-left: 100px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-color: lightgray;
+        border-style: solid;
+        border-width: 2px;
+        width: 400px;
+        height: 40px;
+        background-color: lightgray;
+    }
+    p.title{
+        margin-left: 25px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    input#input {
+        margin-left: 100px;
+        border:solid lightgray;
+        height: 40px;
+        width: 360px;
+        margin-top: 0;
+        border-bottom-left-radius:10px;
+    }
+    input#submit{
+        position: absolute;
+        left: 459px;
+        border-bottom-right-radius:10px ;
+        border:solid lightgray;
+    }
+    div.wordbox1{
+        border-color: lightgray;
+        border-style: solid;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        width: 400px;
+        height: 40px;
+        margin-left: 100px;
+    }
+    div.wordbox2{
+        border-color: lightgray;
+        border-style: solid;
+        border-top-width: 1px;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        width: 400px;
+        height: 40px;
+        margin-left: 100px;
+        border-bottom-right-radius:10px ;
+        border-bottom-left-radius:10px;
+    }
+    p.word{
+        margin-left: 25px;
+        margin-top: 10px;
+        color: deepskyblue;
+    }
+    div#choosebox{
+        border-color: lightgray;
+        border-style: solid;
+        border-left-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 0;
+        width: 400px;
+        height: 80px;
+        margin-left: 100px;
+    }
+    div.choose{
+        margin-top: 30px;
+        margin-left: 80px;
+        float: left;
+    }
+    select.select{
+        height: 30px;
+        width: 200px;
+        border-color: lightgray;
+        border-radius: 5px;
+    }
+    input#filter{
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        border-color: limegreen;
+        background-color: limegreen;
+        color: white;
+        font-weight: bold;
+    }
+    div#picturebox{
+        border-color: lightgray;
+        border-style: solid;
+        width: 400px;
+        height: 3400px;
+        margin-left: 100px;
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:10px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+    img.picture{
+        margin-top: 15px;
+        margin-left: 90px;
+        width:180px;
+        height: 180px;
+    }
+    div#page{
+        text-align: center;
+    }
+    p#num{
+        margin-top: 25px;
+        color: deepskyblue;
+        font-size: 15px;
+    }
+}

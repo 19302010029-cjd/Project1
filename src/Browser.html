@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Browser</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Browser.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><img src="images/logo_header.jpg" width="60" height="50" alt="image" id="image"></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="Browser.html" id="Browse">Browse</a></li>
+            <li><a href="Search.html" id="Search">Search</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">My account ▼</a><!--下拉列表-->
+                <div class="dropdown-content">
+                    <a href="Upload.html"><p><img src="images/upload.jpg" width="20" height="20">  Upload</p></a>
+                    <a href="my_photo.html"><p><img src="images/myphoto.jpg" width="20" height="20">  My Photo</p></a>
+                    <a href="favor.html"><p><img src="images/favor.jpg" width="20" height="20">  Favor</p></a>
+                    <a href="login.html"><p><img src="images/login.jpg" width="20" height="20">  Login in</p></a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<div id="part1">
+    <div class="titlebox"><p class="title">Search by Title</p></div>
+        <form>
+           <label>
+               <input type="search" value="" id="input">
+               <input type="image" src="images/search.jpg" width="42" height="37" id="submit" onclick="alert('已搜索成功！')">
+           </label>
+        </form>
+    <form>
+        <div class="titlebox"><p class="title">Hot Content</p></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">City</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">People</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Animal</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Building</p></a></div>
+        <div class="wordbox2"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Wonder</p></a></div>
+    </form>
+    <form>
+        <div class="titlebox"><p class="title">Hot Country</p></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">China</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Italy</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Japan</p></a></div>
+        <div class="wordbox2"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">America</p></a></div>
+    </form>
+    <form>
+        <div class="titlebox"><p class="title">Hot City</p></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Shanghai</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Tokyo</p></a></div>
+        <div class="wordbox1"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">Roma</p></a></div>
+        <div class="wordbox2"><a class="entry" onclick="alert('已显示搜索结果!')"><p class="word">New York</p></a></div>
+    </form>
+</div>
+<div id="part2">
+<form>
+    <div class="titlebox1"><p class="title">Filter</p></div>
+    <div id="choosebox">
+    <div class="choose">
+        <label>
+            <select class="select">
+                <option hidden>Filter by Content</option>
+                <option>Scenery</option>
+                <option>City</option>
+                <option>People</option>
+                <option>Animal</option>
+                <option>Building</option>
+                <option>Wonder</option>
+            </select>
+        </label>
+    </div>
+    <div class="choose">
+        <label for="Country"></label><select id="Country" class="select">
+            <option hidden>Filter by Country</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+            <option value="Italy">Italy</option>
+            <option value="America">America</option>
+        </select>
+    </div>
+    <div class="choose">
+        <label for="City"></label><select id="City" class="select">
+            <option hidden>Filter by City</option>
+        </select>
+    </div>
+    <div class="choose" onclick="alert('已显示搜索结果')"><input type="button" value="Filter" id="filter"></div>
+    </div>
+</form>
+    <div id="picturebox">
+        <a href="details.html"><img src="images/detail.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/mainpicture.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/6119130918.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/6114859969.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/9498386718.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/9494282329.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/5855174537.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/5855191275.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/5855209453.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/5855213165.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/5855729828.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/6114850721.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/6114904363.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/6114960821.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/9494470337.jpg" class="picture"></a>
+        <a href="details.html"><img src="images/travel-images/normal/medium/9493997865.jpg" class="picture"></a>
+        <div id="page"><p id="num"><< 1 2 3 4 5 >></p></div>
+    </div>
+</div>
+<script type="text/javascript">//实现二级联动
+        var Country=document.getElementById("Country");//获取第一个下拉框
+        Country.onclick=function(){				//	给第一个下拉框绑定点击事件
+            var val=Country.value;			//获取第一个下拉框中option的值
+            switch(val){						//利用switch语句给第二个下拉框插入值
+                case 'China':
+                    document.getElementById("City").innerHTML="<option>Shanghai</option><option>Kunming</option><option>Beijing</option><option>Yantai</option>";
+                    break;
+                case "Japan":
+                    document.getElementById("City").innerHTML="<option>Tokyo</option><option>Osaka</option><option>Kamakura</option>";
+                    break;
+                case "Italy":
+                    document.getElementById("City").innerHTML="<option>Roma</option><option>Milan</option><option>Venice</option><option>Florence</option>";
+                    break;
+                case "America":
+                    document.getElementById("City").innerHTML="<option>New York</option><option>San Francisco</option><option>Washington</option>";
+                    break;
+            }
+        }
+</script>
+<footer>
+    <small>备案号：19302010029</small>
+</footer>
+</body>
+</html>

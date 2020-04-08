@@ -1,0 +1,145 @@
+p{
+    line-height: 40px;
+}
+li a, .dropbtn
+{
+    display:inline-block;
+    color:white;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+}
+li a:hover, .dropdown:hover, .dropbtn
+{
+    background-color:#111;
+}
+.dropdown
+{
+    display:inline-block;
+    float: right;
+}
+.dropdown-content
+{
+    display:none;
+    position:absolute;
+    background-color:#f9f9f9;
+    min-width:160px;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.dropdown-content a
+{
+    color:black;
+    padding:10px 10px;
+    text-decoration:none;
+    display:block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+a#Home{
+    background-color: #333;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-bottom-color: #333;
+}
+
+li a:hover {
+    background-color: #333;
+    border-bottom-width: 8px;
+    border-style: solid;
+    border-bottom-color: #333;
+}
+div.footer{
+    background-color: #111;
+    padding-left: 50px;
+    padding-right: auto;
+    padding-bottom:30px;
+    padding-top: 10px;
+    text-align: left;
+    color: white;
+    clear: both;
+}
+a.space{
+    padding-left: 25%;
+}
+img#wechat{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+p#id{
+    padding-left: 40%;
+}
+div.part{
+    width: 250px;
+    height: 200px;
+    padding-left: 35px;
+    padding-top: 20px;
+    margin: 45px 35px 30px 110px;
+    padding-bottom: 20px;
+    border-color: lightgray;
+    background-color: lightgray;
+    border-radius: 10px;
+    float: left;
+}
+img.picture{
+    border-radius: 10px;
+}
+h4.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p.comment{
+    font-size: 9px;
+    color: grey;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+span{
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+div#totop{
+    position: fixed;
+    right: 30px;
+   bottom: 80px;
+}
+div#refresh{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+img#refreshbutton{
+    border-radius: 15px;
+    background-color: transparent;
+}
+img#top{
+    border-radius: 15px;
+    background-color: transparent;
+}
+.foot{
+    color: white;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/Upload.css">
+    <script type="text/javascript"><!--实现上传图片显示-->
+        function upload(e) {
+            console.log(e);
+            console.log(e.target.files[0]);
+            let url = getObjectURL(e.target.files[0]);
+            console.log(url);
+            let ele = $("#show");
+            ele.src = url;
+        }
+
+        function $(selector) {
+            return document.querySelector(selector);
+        }
+
+        function getObjectURL(file) {
+            var url = null;
+            if (window.createObjectURL !== undefined) {
+                url = window.createObjectURL(file);
+            } else if (window.URL !== undefined) { // mozilla(firefox)
+                url = window.URL.createObjectURL(file);
+            } else if (window.webkitURL !== undefined) { // webkit or chrome
+                url = window.webkitURL.createObjectURL(file);
+            }
+            return url;
+        }
+    </script>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><img src="images/logo_header.jpg" width="60" height="50" alt="image" id="image"></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="Browser.html" id="Browse">Browse</a></li>
+            <li><a href="Search.html" id="Search">Search</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">My account ▼</a><!--下拉列表-->
+                <div class="dropdown-content">
+                    <a href="Upload.html"><p><img src="images/upload.jpg" width="20" height="20">  Upload</p></a>
+                    <a href="my_photo.html"><p><img src="images/myphoto.jpg" width="20" height="20">  My Photo</p></a>
+                    <a href="favor.html"><p><img src="images/favor.jpg" width="20" height="20">  Favor</p></a>
+                    <a href="login.html"><p><img src="images/login.jpg" width="20" height="20">  Login in</p></a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<form action="my_photo.html" method="get">
+    <div id="title"><p id="upload">Upload</p></div>
+        <div id="contents">
+            <p id="noupload"><img src="images/load.jpg" id="show" width="35%" height="30%"></p>
+            <label class="fileinput-button">
+                <span>Upload</span>
+                <input type="file" name="" onchange="upload(event)">
+            </label>
+        <div class="content">
+            <label>
+                <p>图片标题:</p>
+                <input type="text" value="" size="50" class="input">
+            </label>
+        </div>
+        <div class="content">
+        <label>
+            <p>图片描述:</p>
+            <textarea class="input1"></textarea>
+        </label>
+        </div>
+        <div class="content">
+            <label>
+                <p>拍摄国家:</p>
+                <input type="text" value="" size="50" class="input">
+            </label>
+        </div>
+        <div class="content">
+            <label>
+                <p>拍摄城市:</p>
+                <input type="text" value="" size="50" class="input">
+            </label>
+        </div>
+        <div class="content" onclick="alert('已成功提交')">
+            <input type="submit" value="Submit" id="submit">
+        </div>
+        </div>
+</form>
+<footer>
+    <small>备案号：19302010029</small>
+</footer>
+</body>
+</html>
+

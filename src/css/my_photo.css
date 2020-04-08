@@ -1,0 +1,129 @@
+p{
+    line-height: 40px;
+    max-width: 100%;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+div#myphoto{
+    border-color: lightgray;
+    background-color: lightgray;
+    padding-left: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+p#title{
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+div.section1{
+    border-color: lightgray;
+    background-color: white;
+    border-style: solid;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 210px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+}
+div.section2{
+    border-top-width: 1px;
+    border-color: lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 250px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+img.picture{
+    margin-top: 25px;
+    float: left;
+    margin-left: 50px;
+}
+div.content{
+    margin-left: 100px;
+}
+h2.title{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+p.passage{
+    margin-left: 200px;
+}
+input.delete{
+    margin-top: 30px;
+    margin-left: 10px;
+    color: red;
+    border-radius: 5px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+}
+footer{
+    margin-left: 25px;
+    margin-top: 20px;
+    position: static;
+    bottom: 0;
+}
+p.choose{
+    margin-top: 1%;
+    text-align: center;
+    color: deepskyblue;
+}
+input.modify{
+    margin-top: 30px;
+    margin-left: 50px;
+    color: mediumpurple;
+    border-radius: 5px;
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+}
+input.modify:hover{
+    cursor: pointer;
+}
+input.delete:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {/*响应式布局，在屏幕小于600px时缩小按钮的大小*/
+    input.modify{
+        margin-top: 30px;
+        margin-left: 50px;
+        color: mediumpurple;
+        border-radius: 5px;
+        background-color: white;
+        width: 60px;
+        height: 30px;
+        font-weight: bold;
+    }
+    input.delete{
+        margin-top: 30px;
+        margin-left: 10px;
+        color: red;
+        border-radius: 5px;
+        background-color: white;
+        width: 60px;
+        height: 30px;
+        font-weight: bold;
+    }
+}

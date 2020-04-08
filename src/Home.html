@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Home.css">
+</head>
+<body>
+<header>
+    <nav>   <!--导航栏-->
+        <ul>
+            <li><img src="images/logo_header.jpg" width="60" height="50" alt="image" id="image"></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="Browser.html" id="Browse">Browse</a></li>
+            <li><a href="Search.html" id="Search">Search</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">My account ▼</a>
+            <div class="dropdown-content"> <!--下拉列表-->
+                <a href="Upload.html"><p><img src="images/upload.jpg" width="20" height="20">  Upload</p></a>
+                <a href="my_photo.html"><p><img src="images/myphoto.jpg" width="20" height="20">  My Photo</p></a>
+                <a href="favor.html"><p><img src="images/favor.jpg" width="20" height="20">  Favor</p></a>
+                <a href="login.html"><p><img src="images/login.jpg" width="20" height="20">  Login in</p></a>
+            </div>
+        </div>
+        </ul>
+    </nav>
+</header>
+<section>
+<div>
+    <img src="images/mainpicture.jpg" width="100%" height="400" id="mainpicture">
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/6119130918.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE1</h4>
+    <p class="comment">This is my first photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/6114859969.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE2</h4>
+    <p class="comment">This is my second photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/9498386718.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE3</h4>
+    <p class="comment">This is my third photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/9494282329.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE4</h4>
+    <p class="comment">This is my fourth photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/9504451722.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE5</h4>
+    <p class="comment">This is my fifth photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+<div class="part">
+    <a href="details.html"><img src="images/travel-images/normal/medium/9505536014.jpg" width="85%" height="150" class="picture"></a>
+    <h4 class="title">TITLE6</h4>
+    <p class="comment">This is my sixth photograph,thank you for visiting there.It's a beatiful place which is worth visiting.</p>
+</div>
+</section>
+<footer>   <!--页脚-->
+    <div class="footer">
+        <div id="wechatpicture"><img src="images/wechat.jpg" width="120" height="120" id="wechat"></div>
+    <p><a class="foot">使用条款</a>
+        <a class=" foot space">关于</a></p>
+        <p><a class="foot">隐私保护</a>
+        <a class="foot space">联系我们</a></p>
+        <p><a class="foot">Cookie</a></p>
+        <p id="id">备案号：19302010029</p>
+    </div>
+    <div id="totop"><a class="top-link" href="#"><img src="images/top.jpg" id="top" width="30px" height="30px"></a></div>
+    <div id="refresh" onclick="alert('图片已刷新')"><img src="images/refresh.jpg" id="refreshbutton" width="30px" height="30px"></div>
+    <script>
+        $(".top-link").click(function(){
+            $('body,html').animate({scrollTop:0},1000);
+            return false;
+        });
+    </script><!--实现返回至页面顶部-->
+</footer>
+</body>
+</html>

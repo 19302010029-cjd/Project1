@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/details.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><img src="images/logo_header.jpg" width="60" height="50" alt="image" id="image"></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="Browser.html" id="Browse">Browse</a></li>
+            <li><a href="Search.html" id="Search">Search</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">My account ▼</a><!--下拉列表-->
+                <div class="dropdown-content">
+                    <a href="Upload.html"><p><img src="images/upload.jpg" width="20" height="20">  Upload</p></a>
+                    <a href="my_photo.html"><p><img src="images/myphoto.jpg" width="20" height="20">  My Photo</p></a>
+                    <a href="favor.html"><p><img src="images/favor.jpg" width="20" height="20">  Favor</p></a>
+                    <a href="login.html"><p><img src="images/login.jpg" width="20" height="20">  Login in</p></a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+<section>
+    <div>
+        <div id="title"><p id="details">Details</p></div>
+        <div id="main">
+                <p id="phototitle">乘风破浪 <small>by Tom</small></p>
+            <div class="part"><img src="images/detail.jpg" width="550" height="400" id="picture"></div>
+            <div class="part">
+                <div id="likenumber" ><p class="titles">Like Number</p></div>
+                <div id="number"><p id="num">99</p></div>
+             <div id="detail">
+                 <p class="titles">Image Details</p>
+             </div>
+              <div>
+                  <div class="content"><p class="word">Content:Scenery</p></div>
+                  <div class="content"><p class="word">Country:China</p></div>
+                  <div class="content1"><p class="word">City:Shanghai</p></div>
+                  <input type="button" value="❤收藏" id="favor" onclick="alert('已成功收藏')">
+            </div>
+            </div>
+            <p id="passage">This is my first photograph,thank you for visiting here.We can see a sailing boat in the photo which represent bravery and challenge.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+    </div>
+    </div>
+</section>
+<footer><!--页脚-->
+    <small>备案号：19302010029</small>
+</footer>
+</body>
+</html>

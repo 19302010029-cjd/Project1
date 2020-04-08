@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/Search.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><img src="images/logo_header.jpg" width="60" height="50" alt="image" id="image"></li>
+            <li><a href="Home.html" id="Home">Home</a></li>
+            <li><a href="Browser.html" id="Browse">Browse</a></li>
+            <li><a href="Search.html" id="Search">Search</a></li>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">My account ▼</a><!--下拉列表-->
+                <div class="dropdown-content">
+                    <a href="Upload.html"><p><img src="images/upload.jpg" width="20" height="20">  Upload</p></a>
+                    <a href="my_photo.html"><p><img src="images/myphoto.jpg" width="20" height="20">  My Photo</p></a>
+                    <a href="favor.html"><p><img src="images/favor.jpg" width="20" height="20">  Favor</p></a>
+                    <a href="login.html"><p><img src="images/login.jpg" width="20" height="20">  Login in</p></a>
+                </div>
+            </div>
+        </ul>
+    </nav>
+</header>
+    <div id="title"><p class="searchtitle">Search</p></div>
+<div id="contents">
+    <div>
+    <label>
+        <p class="words"><input type="radio">Filter by Title</p>
+    </label>
+        <br>
+    <label>
+        <input type="search" size="100" id="search1">
+    </label>
+    </div>
+    <div>
+    <label>
+        <p class="words"><input type="radio">Filter by Description</p>
+    </label>
+        <label for="search2"><textarea id="search2"></textarea></label>
+    </div>
+    <div onclick="alert('已显示搜索结果')"><input type="button" value="Filter" id="filter"></div>
+</div>
+<section>
+    <div id="result"><p class="searchtitle">Result</p></div>
+    <div class="section1">
+        <a href="details.html"><img src="images/travel-images/normal/medium/6119130918.jpg" width="200" height="150" class="picture"></a>
+        <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="passage">This is my first photograph,thank you for visiting here.It's a beatiful place which is worth visiting.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <a href="details.html"><img src="images/travel-images/normal/medium/6114859969.jpg" width="200" height="150" class="picture"></a>
+        <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="passage">This is my second photograph,thank you for visiting here.It's a beatiful place which is worth visiting.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <a href="details.html"><img src="images/travel-images/normal/medium/9498386718.jpg" width="200" height="150" class="picture"></a>
+        <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="passage">This is my third photograph,thank you for visiting here.It's a beatiful place which is worth visiting.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <a href="details.html"><img src="images/mainpicture.jpg" width="200" height="150" class="picture"></a>
+        <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="passage">This is my fourth photograph,thank you for visiting here.It's a beatiful place which is worth visiting.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+        </div>
+    </div>
+    <div class="section2">
+        <a href="details.html"><img src="images/travel-images/normal/medium/9494282329.jpg" width="200" height="150" class="picture"></a>
+        <div class="content">
+            <h2 class="title">Title</h2>
+            <p class="passage">This is my fifth photograph,thank you for visiting here.It's a beatiful place which is worth visiting.Snow peaks have distinct edges and corners of ice and snow, while the snow layer in the backlight is soft and soothing. Layers of white clouds like surging waves, forming a huge front at the foot; everything is so pure, so holy.</p>
+            <p class="choose"><< 1 2 3 4 5 >></p>
+        </div>
+    </div>
+</section>
+<footer>
+    <small>备案号：19302010029</small>
+</footer>
+</body>
+</html>
